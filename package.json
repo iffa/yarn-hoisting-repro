@@ -1,0 +1,9 @@
+{
+  "name": "yarn-hoisting-repro",
+  "packageManager": "yarn@4.4.1",
+  "workspaces": [
+    "web-common",
+    "web",
+    "mobile"
+  ]
+}
