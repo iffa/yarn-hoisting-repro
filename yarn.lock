@@ -931,6 +931,51 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@foo/mobile@workspace:apps/mobile":
+  version: 0.0.0-use.local
+  resolution: "@foo/mobile@workspace:apps/mobile"
+  dependencies:
+    "@tanstack/react-query": "npm:^4.36.1"
+    react: "npm:18.2.0"
+    react-native: "npm:0.73.9"
+  languageName: unknown
+  linkType: soft
+
+"@foo/root@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@foo/root@workspace:."
+  languageName: unknown
+  linkType: soft
+
+"@foo/web-common@workspace:*, @foo/web-common@workspace:packages/web-common":
+  version: 0.0.0-use.local
+  resolution: "@foo/web-common@workspace:packages/web-common"
+  dependencies:
+    "@tanstack/react-query": "npm:^5.55.4"
+    react: "npm:^18.3.1"
+  languageName: unknown
+  linkType: soft
+
+"@foo/web2@workspace:apps/web2":
+  version: 0.0.0-use.local
+  resolution: "@foo/web2@workspace:apps/web2"
+  dependencies:
+    "@foo/web-common": "workspace:*"
+    "@tanstack/react-query": "npm:^5.55.4"
+    react: "npm:^18.3.1"
+  languageName: unknown
+  linkType: soft
+
+"@foo/web@workspace:apps/web":
+  version: 0.0.0-use.local
+  resolution: "@foo/web@workspace:apps/web"
+  dependencies:
+    "@foo/web-common": "workspace:*"
+    "@tanstack/react-query": "npm:^5.55.4"
+    react: "npm:^18.3.1"
+  languageName: unknown
+  linkType: soft
+
 "@hapi/hoek@npm:^9.0.0, @hapi/hoek@npm:^9.3.0":
   version: 9.3.0
   resolution: "@hapi/hoek@npm:9.3.0"
@@ -2420,9 +2465,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.4":
-  version: 1.5.18
-  resolution: "electron-to-chromium@npm:1.5.18"
-  checksum: 10c0/2c553c4e7618e887398af0fb7ddd8055beb69d37a810ad73fcea0f3e9027f1fc879ef280151fb6bae8e5b961f5597452eafc1ae5a0adca5bd49211545a34afe7
+  version: 1.5.19
+  resolution: "electron-to-chromium@npm:1.5.19"
+  checksum: 10c0/73e25a928e041d707565fb08371b6ba5f3d7d99c78adddfd553660f28809ca22f1608ff295da3c764903a8eae890cbdd701b1b64b3e1eaeb298cb8aecbf21937
   languageName: node
   linkType: hard
 
@@ -4005,16 +4050,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mobile@workspace:mobile":
-  version: 0.0.0-use.local
-  resolution: "mobile@workspace:mobile"
-  dependencies:
-    "@tanstack/react-query": "npm:^4.36.1"
-    react: "npm:18.2.0"
-    react-native: "npm:0.73.9"
-  languageName: unknown
-  linkType: soft
-
 "ms@npm:2.0.0":
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
@@ -5497,25 +5532,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-common@workspace:*, web-common@workspace:web-common":
-  version: 0.0.0-use.local
-  resolution: "web-common@workspace:web-common"
-  dependencies:
-    "@tanstack/react-query": "npm:^5.55.4"
-    react: "npm:^18.3.1"
-  languageName: unknown
-  linkType: soft
-
-"web@workspace:web":
-  version: 0.0.0-use.local
-  resolution: "web@workspace:web"
-  dependencies:
-    "@tanstack/react-query": "npm:^5.55.4"
-    react: "npm:^18.3.1"
-    web-common: "workspace:*"
-  languageName: unknown
-  linkType: soft
-
 "webidl-conversions@npm:^3.0.0":
   version: 3.0.1
   resolution: "webidl-conversions@npm:3.0.1"
@@ -5738,12 +5754,6 @@ __metadata:
   checksum: 10c0/ccd7e723e61ad5965fffbb791366db689572b80cca80e0f96aad968dfff4156cd7cd1ad18607afe1046d8241e6fb2d6c08bf7fa7bfb5eaec818735d8feac8f05
   languageName: node
   linkType: hard
-
-"yarn-hoisting-repro@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "yarn-hoisting-repro@workspace:."
-  languageName: unknown
-  linkType: soft
 
 "yocto-queue@npm:^0.1.0":
   version: 0.1.0

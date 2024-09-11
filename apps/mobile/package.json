@@ -1,10 +1,7 @@
 {
-  "name": "mobile",
+  "name": "@foo/mobile",
   "version": "0.0.0",
   "private": true,
-  "installConfig": {
-    "hoistingLimits": "workspaces"
-  },
   "dependencies": {
     "@tanstack/react-query": "^4.36.1",
     "react": "18.2.0",
