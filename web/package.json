@@ -1,0 +1,8 @@
+{
+  "name": "@foo/web-root",
+  "workspaces": [
+    "web1",
+    "web2",
+    "web-common"
+  ]
+}

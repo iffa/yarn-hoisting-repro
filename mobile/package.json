@@ -1,0 +1,6 @@
+{
+  "name": "@foo/mobile-root",
+  "workspaces": [
+    "mobile"
+  ]
+}

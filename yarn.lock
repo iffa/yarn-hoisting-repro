@@ -931,9 +931,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@foo/mobile@workspace:apps/mobile":
+"@foo/mobile-root@workspace:mobile":
   version: 0.0.0-use.local
-  resolution: "@foo/mobile@workspace:apps/mobile"
+  resolution: "@foo/mobile-root@workspace:mobile"
+  languageName: unknown
+  linkType: soft
+
+"@foo/mobile@workspace:mobile/mobile":
+  version: 0.0.0-use.local
+  resolution: "@foo/mobile@workspace:mobile/mobile"
   dependencies:
     "@tanstack/react-query": "npm:^4.36.1"
     react: "npm:18.2.0"
@@ -947,18 +953,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@foo/web-common@workspace:*, @foo/web-common@workspace:packages/web-common":
+"@foo/web-common@workspace:*, @foo/web-common@workspace:web/web-common":
   version: 0.0.0-use.local
-  resolution: "@foo/web-common@workspace:packages/web-common"
+  resolution: "@foo/web-common@workspace:web/web-common"
   dependencies:
     "@tanstack/react-query": "npm:^5.55.4"
     react: "npm:^18.3.1"
   languageName: unknown
   linkType: soft
 
-"@foo/web2@workspace:apps/web2":
+"@foo/web-root@workspace:web":
   version: 0.0.0-use.local
-  resolution: "@foo/web2@workspace:apps/web2"
+  resolution: "@foo/web-root@workspace:web"
+  languageName: unknown
+  linkType: soft
+
+"@foo/web1@workspace:web/web1":
+  version: 0.0.0-use.local
+  resolution: "@foo/web1@workspace:web/web1"
   dependencies:
     "@foo/web-common": "workspace:*"
     "@tanstack/react-query": "npm:^5.55.4"
@@ -966,9 +978,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@foo/web@workspace:apps/web":
+"@foo/web2@workspace:web/web2":
   version: 0.0.0-use.local
-  resolution: "@foo/web@workspace:apps/web"
+  resolution: "@foo/web2@workspace:web/web2"
   dependencies:
     "@foo/web-common": "workspace:*"
     "@tanstack/react-query": "npm:^5.55.4"

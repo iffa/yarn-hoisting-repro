@@ -2,7 +2,7 @@
   "name": "@foo/root",
   "packageManager": "yarn@4.4.1",
   "workspaces": [
-    "packages/*",
-    "apps/*"
+    "web",
+    "mobile"
   ]
 }
